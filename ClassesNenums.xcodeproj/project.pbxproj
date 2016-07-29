@@ -15,6 +15,9 @@
 		5BB0BD181D4BD27B0054120F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BB0BD171D4BD27B0054120F /* Assets.xcassets */; };
 		5BB0BD1B1D4BD27B0054120F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BB0BD191D4BD27B0054120F /* LaunchScreen.storyboard */; };
 		5BB0BD261D4BD27B0054120F /* ClassesNenumsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0BD251D4BD27B0054120F /* ClassesNenumsTests.swift */; };
+		5BB0BD321D4BD5B10054120F /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0BD311D4BD5B10054120F /* Bird.swift */; };
+		5BB0BD361D4BE4510054120F /* TrexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0BD351D4BE4510054120F /* TrexTests.swift */; };
+		5BB0BD381D4BFA5F0054120F /* SpeedTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB0BD371D4BFA5F0054120F /* SpeedTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		5BB0BD211D4BD27B0054120F /* ClassesNenumsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassesNenumsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB0BD251D4BD27B0054120F /* ClassesNenumsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesNenumsTests.swift; sourceTree = "<group>"; };
 		5BB0BD271D4BD27B0054120F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BB0BD311D4BD5B10054120F /* Bird.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
+		5BB0BD351D4BE4510054120F /* TrexTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrexTests.swift; sourceTree = "<group>"; };
+		5BB0BD371D4BFA5F0054120F /* SpeedTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeedTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,12 +95,8 @@
 		5BB0BD0F1D4BD27B0054120F /* ClassesNenums */ = {
 			isa = PBXGroup;
 			children = (
-				5BB0BD101D4BD27B0054120F /* AppDelegate.swift */,
-				5BB0BD121D4BD27B0054120F /* ViewController.swift */,
-				5BB0BD141D4BD27B0054120F /* Main.storyboard */,
-				5BB0BD171D4BD27B0054120F /* Assets.xcassets */,
-				5BB0BD191D4BD27B0054120F /* LaunchScreen.storyboard */,
-				5BB0BD1C1D4BD27B0054120F /* Info.plist */,
+				5BB0BD311D4BD5B10054120F /* Bird.swift */,
+				5BB0BD391D4BFCE50054120F /* Supporting Files */,
 			);
 			path = ClassesNenums;
 			sourceTree = "<group>";
@@ -102,10 +104,33 @@
 		5BB0BD241D4BD27B0054120F /* ClassesNenumsTests */ = {
 			isa = PBXGroup;
 			children = (
+				5BB0BD351D4BE4510054120F /* TrexTests.swift */,
+				5BB0BD371D4BFA5F0054120F /* SpeedTest.swift */,
+				5BB0BD301D4BD55F0054120F /* Test Supporting Files */,
+			);
+			path = ClassesNenumsTests;
+			sourceTree = "<group>";
+		};
+		5BB0BD301D4BD55F0054120F /* Test Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				5BB0BD251D4BD27B0054120F /* ClassesNenumsTests.swift */,
 				5BB0BD271D4BD27B0054120F /* Info.plist */,
 			);
-			path = ClassesNenumsTests;
+			name = "Test Supporting Files";
+			sourceTree = "<group>";
+		};
+		5BB0BD391D4BFCE50054120F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5BB0BD101D4BD27B0054120F /* AppDelegate.swift */,
+				5BB0BD121D4BD27B0054120F /* ViewController.swift */,
+				5BB0BD141D4BD27B0054120F /* Main.storyboard */,
+				5BB0BD171D4BD27B0054120F /* Assets.xcassets */,
+				5BB0BD191D4BD27B0054120F /* LaunchScreen.storyboard */,
+				5BB0BD1C1D4BD27B0054120F /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		A60CE3AE02995F9263E65EAB /* Pods */ = {
@@ -329,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BB0BD131D4BD27B0054120F /* ViewController.swift in Sources */,
+				5BB0BD321D4BD5B10054120F /* Bird.swift in Sources */,
 				5BB0BD111D4BD27B0054120F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,7 +363,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BB0BD361D4BE4510054120F /* TrexTests.swift in Sources */,
 				5BB0BD261D4BD27B0054120F /* ClassesNenumsTests.swift in Sources */,
+				5BB0BD381D4BFA5F0054120F /* SpeedTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
