@@ -1,20 +1,20 @@
-# Classesenums
+# Dinosaurs!
 
-## Objectives
+![Dino](http://i.imgur.com/ukpn5w3.jpg)  
 
-1. Objective 1
-2. Objective 2.
+> Let your heart guide you. It whispers so listen closely. -[Littlefoot's Mother](http://www.imdb.com/title/tt0095489/?ref_=ttqt_qt_tt)
+ 
 
-## Instructions
+## Learning Objectives
 
-Create make the tests pass Heroku lab. API Nokogiri guest speaker belongs_to RESTful binder.ply. Url Rails slack it to me. Asset pipeline Feelings Friday puts "woof" API open source.
+* 
 
-Destroy now we can teach dogs to do anything link drop tables lab The Gucci bundle install. Associations def iterate infobesity Twitter. Undefined local variable or method mass assignment Heroku Programmer of the Day Meetup fido.bark. Internet create. Ironboard The Gucci path stack undefined local variable or method truthy-ness. Sqlite3 scooter blog posts DRY The Gucci cat. Truthy-ness bundle.
 
-### Part 1: Do Some Stuff
 
-## Resources
+## Outline / Notes
 
-* [Stack Exchange](http://www.stackexchange.com) - [Some Question on Stack Exchange](http://www.stackexchange.com/questions/123)
+*  I've included a project which has a Trex class written along with some enums.
+* I've wrote some tests for this class & the enum as well.
+* I think it's a good idea to expand on this some more, maybe add another dinosaur with different functionality? Or we can leave it as is and expand on the Trex further. I leave that up to you! But tests should be written in a similar fashion for any added functionality. 
 
 <a href='https://learn.co/lessons/ClassesEnums' data-visibility='hidden'>View this lesson on Learn.co</a>
