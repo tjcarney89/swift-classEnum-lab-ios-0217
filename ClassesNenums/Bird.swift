@@ -15,7 +15,6 @@ enum Speed: Int {
     func isFaster(thanSpeed speed: Speed) -> Bool {
         return self.rawValue > speed.rawValue
     }
-    
 }
 
 enum Diet {
@@ -53,6 +52,4 @@ class Trex {
             trex.isAlive = false
         }
     }
-    
 }
-
