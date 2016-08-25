@@ -41,7 +41,7 @@ class TrexSpec: QuickSpec {
                 it("Should be a boolean value that can be mutated (created with var)") {
                     
                     fred.isAlive = false
-                    expect(fred.isAlive).to(equal(false))
+                    expect(fred.isAlive).to(beFalse())
                     
                 }
             }
@@ -79,11 +79,11 @@ class TrexSpec: QuickSpec {
                     
                     slowBetty.speed = .Slow
                     let response = fred.isFaster(thanTrex: slowBetty)
-                    expect(response).to(equal(true))
+                    expect(response).to(beTrue())
                     
                     slowBetty.speed = .Medium
                     let otherResponse = fred.isFaster(thanTrex: slowBetty)
-                    expect(otherResponse).to(equal(true))
+                    expect(otherResponse).to(beTrue())
                     
                 }
                 
@@ -96,14 +96,14 @@ class TrexSpec: QuickSpec {
                     brian.speed = .Slow
                     
                     fred.eat(otherTrex: brian)
-                    expect(brian.isAlive).to(equal(false))
+                    expect(brian.isAlive).to(beFalse())
                     
                     // revive brian! only to be eaten again
                     brian.isAlive = true
                     
                     brian.speed = .Medium
                     fred.eat(otherTrex: brian)
-                    expect(brian.isAlive).to(equal(false))
+                    expect(brian.isAlive).to(beFalse())
                     
                 }
             }
