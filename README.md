@@ -4,9 +4,9 @@
 
 > Let your heart guide you. It whispers so listen closely. -[Littlefoot's Mother](http://www.imdb.com/title/tt0095489/?ref_=ttqt_qt_tt)
 
-## Learning Objectives
+## Overview
 
-* Complete this lab
+In this lab, you'll implement a few simple classes using enums. 
 
 ## Instructions
 
