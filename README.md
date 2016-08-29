@@ -1,4 +1,4 @@
-# Dinosaurs!
+# Enums Dinosaurs Lab 
 
 ![Dino](http://i.imgur.com/ukpn5w3.jpg)
 
