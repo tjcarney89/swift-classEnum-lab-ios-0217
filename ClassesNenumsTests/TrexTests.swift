@@ -17,15 +17,15 @@ class TrexSpec: QuickSpec {
         
         describe("Trex") { 
          
-            let fred = Trex(name: "Fred", sex: .Male)
+            let fred = Trex(name: "Fred", sex: .male)
 
             describe("Designated Initializer") {
                 it("Should initalize a Trex with all of its properties propertly set") {
                     
-                    let expectedSpeed = Speed.Fast
-                    let expectedDiet = Diet.MeatEater
+                    let expectedSpeed = Speed.fast
+                    let expectedDiet = Diet.meatEater
                     let expectedName = "Fred"
-                    let expectedSex = Sex.Male
+                    let expectedSex = Sex.male
                     let expectedIsAlive = true
                     
                     expect(fred.speed).to(equal(expectedSpeed))
@@ -49,14 +49,14 @@ class TrexSpec: QuickSpec {
             describe("speed property") {
                 it("Should be a Speed enum value that can be mutated (created with var)") {
                     
-                    fred.speed = .Slow
-                    expect(fred.speed).to(equal(Speed.Slow))
+                    fred.speed = .slow
+                    expect(fred.speed).to(equal(Speed.slow))
                     
-                    fred.speed = .Medium
-                    expect(fred.speed).to(equal(Speed.Medium))
+                    fred.speed = .medium
+                    expect(fred.speed).to(equal(Speed.medium))
                     
-                    fred.speed = .Fast
-                    expect(fred.speed).to(equal(Speed.Fast))
+                    fred.speed = .fast
+                    expect(fred.speed).to(equal(Speed.fast))
                     
                 }
             }
@@ -75,13 +75,13 @@ class TrexSpec: QuickSpec {
             describe("isFaster(thanTrex:)") {
                 it("Should take in a Trex as an argument and return back a bool indicating whether or not self is faster than the trex passed in as an argument.") {
                     
-                    let slowBetty = Trex(name: "Betty", sex: .Female)
+                    let slowBetty = Trex(name: "Betty", sex: .female)
                     
-                    slowBetty.speed = .Slow
+                    slowBetty.speed = .slow
                     let response = fred.isFaster(thanTrex: slowBetty)
                     expect(response).to(beTrue())
                     
-                    slowBetty.speed = .Medium
+                    slowBetty.speed = .medium
                     let otherResponse = fred.isFaster(thanTrex: slowBetty)
                     expect(otherResponse).to(beTrue())
                     
@@ -92,8 +92,8 @@ class TrexSpec: QuickSpec {
             describe("eat(otherTrex:)") {
                 it("Should take in a Trex as an argument and not return back anything. It should check to see if self is faster than the trex passed in as an argument by calling on the isFaster(thanTrex:) function. If that function call returns back true, then we should set the isAlive property on the Trex passed in to false, otherwise do nothing.") {
                     
-                    let brian = Trex(name: "Brian", sex: .Male)
-                    brian.speed = .Slow
+                    let brian = Trex(name: "Brian", sex: .male)
+                    brian.speed = .slow
                     
                     fred.eat(otherTrex: brian)
                     expect(brian.isAlive).to(beFalse())
@@ -101,7 +101,7 @@ class TrexSpec: QuickSpec {
                     // revive brian! only to be eaten again
                     brian.isAlive = true
                     
-                    brian.speed = .Medium
+                    brian.speed = .medium
                     fred.eat(otherTrex: brian)
                     expect(brian.isAlive).to(beFalse())
                     
