@@ -15,25 +15,25 @@ class SpeedSpec: QuickSpec {
         
         describe("Speed") {
             
-            var speed = Speed.Fast
+            var speed = Speed.fast
             
             describe("isFaster(thanSpeed:") {
-                it("Should take in an argument of type Speed and compare the rawValue of self against the rawValue of the argument passed in. If it's greater, it should return true.") {
+                it("Should take in an argument of type Speed and compare the rawValue of self against the rawValue of the argument passed in. If it's greater, it should retursn true.") {
                     
-                    var otherSpeed = Speed.Slow
+                    var otherSpeed = Speed.low
                     
                     let result = speed.isFaster(thanSpeed: otherSpeed)
                     expect(result).to(beTrue())
                     
                     // changing otherSpeed to medium
-                    otherSpeed = .Medium
+                    otherSpeed = .medium
                     let result2 = speed.isFaster(thanSpeed: otherSpeed)
                     expect(result2).to(beTrue())
                     
                     
                     // changing speed to medium, otherSpeed to fast
-                    speed = .Medium
-                    otherSpeed = .Fast
+                    speed = .medium
+                    otherSpeed = .fast
                     let result3 = speed.isFaster(thanSpeed: otherSpeed)
                     expect(result3).to(beFalse())
                 }
