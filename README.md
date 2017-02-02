@@ -40,17 +40,20 @@ carSpeed.isFaster(thanSpeed: boatSpeed)
   
 **4**. Next, create an enum called `Diet`. (This enum does not need to do any comparisons, so it does not need to have any raw values associated with it.) The cases for `Diet` should be `meatEater` and `vegetarian`.  
 **5**. Then create an enum called `Sex`. The cases of this enum should be `male` and `female`.  
-**6**. Now it's time to create a new _class_ called `Trex`. Declare that class in `Bird.swift`.  
+**6**. Create a new _class_ called `Trex` in `Bird.swift`.  
 **7**. Add a stored property called `speed` to your `Trex` class. This property should be of type `Speed` and should initially be set to `Speed.fast`.  
 **8**. Add a stored property called `diet` to your `Trex` class. This property should be of type `Diet` and should be set to `Diet.meatEater`.  
 **9**. Add a property called `name` of type `String` to `Trex`.  
 **10**. Add a property called `sex` of type `Sex` to `Trex`.  
 **11**. Add a property called `isAlive` of type `Bool` to `Trex`. This should initially be set to `true`.  
 **12**. Create an initializer for `Trex`. This initializer should take two parameters, `name` and `sex`, and assign those parameters to the corresponding properties.  
-**13**. Create a method called `speak()`. This method should return the string ""ROAAAWWWWRRRRR!!!!!!".  
+**13**. Create a method called `speak()`. This method should return the string "ROAAAWWWWRRRRR!!!!!!".  
 **14**. Create a method called `isFaster(thanTrex:)`. This method should take one parameter of type `Trex` called trex. It should return `true` if the instance of `Trex` which is calling on this method is called is faster than the parameter passed in.
+
 **15**. Create a method called `eat(otherTrex:)`. This method should take one parameter of type `Trex` called trex. If the instance of `Trex` which calls on this method is faster than the parameter that is passed in, it should "eat" the other `Trex` (by setting the other `Trex`'s `isAlive` property to `false`).  
 
 That's it! Try running the tests again. This time, they should pass. If they don't, take a look at these directions again and make sure you implemented everything properly, and keeping hammering away until the tests _do_ pass!
 
 <a href='https://learn.co/lessons/ClassesEnums' data-visibility='hidden'>View this lesson on Learn.co</a>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/swift-classEnum-lab'>Enums Dinosaurs Lab</a> on Learn.co and start learning to code for free.</p>
